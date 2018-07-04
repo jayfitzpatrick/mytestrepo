@@ -1,4 +1,5 @@
 # Test PS script via Atom
+#v.3
 
 $serverlist = "1","2"
 foreach ($server in $serverlist) {
