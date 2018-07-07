@@ -24,3 +24,4 @@ turtle.write('Testing Testing Testing', move=False, align='left', font=('Arial',
 turtle.penup()
 turtle.goto(-0,00)
 turtle.pendown()
+turtle.goto(0.0)
