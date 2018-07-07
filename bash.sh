@@ -1,15 +1,9 @@
 #!/bin/#!/bin/sh
 
-# Hi Kate
+# v.2
 
-for (( i = 0; i < 10; i++ )); do
-  #statements
+clear
+
+for (( i = 0; i < 30; i++ )); do
+  echo "Hi Kate #$i"
 done
-
-while [[ condition ]]; do
-  #statements
-done
-
-if [[ $1 > $2 ]]; then
-  #statements
-fi
