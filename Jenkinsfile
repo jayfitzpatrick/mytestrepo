@@ -1,7 +1,7 @@
 timestamps {
 
 node () {
-def env.myVar1='findme1'
+def myVar1 = 'findme1'
 stage ('Variables') {
   env.myVar1='findme2'
 sh """
