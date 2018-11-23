@@ -1,28 +1,25 @@
 pipeline {
     agent any
     environment {
-        ENV_NAME = "${env.BRANCH_NAME}"
+        VAR1 = "findme1"
     }
 
     // ----------------
 
     stages {
-        stage('Build Container') {
+        stage('Starting Work') {
             steps {
-                echo 'Building Container..'
+                echo 'Still Trying.'
 
                 script {
-                    if (ENVIRONMENT_NAME == 'development') {
-                        ENV_NAME = 'Development'
-                    } else if (ENVIRONMENT_NAME == 'release') {
-                        ENV_NAME = 'Production'
-                    }
-                }
-                echo 'Building Branch: ' + env.BRANCH_NAME
-                echo 'Build Number: ' + env.BUILD_NUMBER
-                echo 'Building Environment: ' + ENV_NAME
+                  echo ${VAR1}
+                    sh """
+                    logger ${VAR1}
+                    """
 
-                echo "Running your service with environemnt ${ENV_NAME} now"
+                }
+                echo ${VAR1}
+
             }
         }
     }
