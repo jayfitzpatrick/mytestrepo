@@ -8,6 +8,7 @@ pipeline {
 
    stages {
        stage("first") {
+           steps {
          sh """
          logger "${VAR1}"
          logger "${env.VAR2}"
@@ -15,3 +16,4 @@ pipeline {
          }
          }
        }
+     }
