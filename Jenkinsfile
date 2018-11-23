@@ -13,7 +13,8 @@ pipeline {
 
                 script {
                     sh """
-                    logger \${VAR1}
+                    logger "${VAR1}"
+                    logger "${env.myVar}"
                     """
 
                 }
