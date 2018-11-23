@@ -18,8 +18,6 @@ pipeline {
                     """
 
                 }
-                echo ${VAR1}
-
             }
         }
     }
