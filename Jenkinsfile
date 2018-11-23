@@ -2,7 +2,7 @@ timestamps {
 
 node () {
 env.myVar1='findme2'
-stage ('Downloading Kernel Source') {
+stage ('Variables') {
   env.myVar1='findme2'
 sh """
 logger "${env.myVar1}"
