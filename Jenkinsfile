@@ -12,9 +12,8 @@ pipeline {
                 echo 'Still Trying.'
 
                 script {
-                  echo ${VAR1}
                     sh """
-                    logger ${VAR1}
+                    logger \${VAR1}
                     """
 
                 }
