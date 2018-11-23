@@ -1,7 +1,7 @@
 timestamps {
 
-VAR1 = 'findme1'
-VAR2 = 'findme2'
+VAR1='findme1'
+VAR2='findme2'
 node () {
 env.myVar1=${VAR1}
 stage ('Variables') {
